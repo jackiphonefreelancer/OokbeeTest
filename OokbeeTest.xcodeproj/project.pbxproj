@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8DB316B42348EFE200A26654 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB316B32348EFE200A26654 /* AppDelegate.swift */; };
+		8DB316B62348EFE200A26654 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB316B52348EFE200A26654 /* SceneDelegate.swift */; };
+		8DB316B82348EFE200A26654 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB316B72348EFE200A26654 /* ContentView.swift */; };
+		8DB316BA2348EFE500A26654 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DB316B92348EFE500A26654 /* Assets.xcassets */; };
+		8DB316BD2348EFE500A26654 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DB316BC2348EFE500A26654 /* Preview Assets.xcassets */; };
+		8DB316C02348EFE500A26654 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DB316BE2348EFE500A26654 /* LaunchScreen.storyboard */; };
+		8DB316CB2348EFE500A26654 /* OokbeeTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB316CA2348EFE500A26654 /* OokbeeTestTests.swift */; };
+		8DB316D62348EFE500A26654 /* OokbeeTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB316D52348EFE500A26654 /* OokbeeTestUITests.swift */; };
+		8DB316E52348F07800A26654 /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB316E42348F07800A26654 /* BookModel.swift */; };
+		8DB316F22348F3D500A26654 /* ServiceAPIMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB316EE2348F3D500A26654 /* ServiceAPIMethod.swift */; };
+		8DB316F62348F82400A26654 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB316F52348F82400A26654 /* TestViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8DB316C72348EFE500A26654 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8DB316A82348EFE200A26654 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DB316AF2348EFE200A26654;
+			remoteInfo = OokbeeTest;
+		};
+		8DB316D22348EFE500A26654 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8DB316A82348EFE200A26654 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DB316AF2348EFE200A26654;
+			remoteInfo = OokbeeTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8DB316B02348EFE200A26654 /* OokbeeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OokbeeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DB316B32348EFE200A26654 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8DB316B52348EFE200A26654 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8DB316B72348EFE200A26654 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8DB316B92348EFE500A26654 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8DB316BC2348EFE500A26654 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8DB316BF2348EFE500A26654 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8DB316C12348EFE500A26654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DB316C62348EFE500A26654 /* OokbeeTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OokbeeTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DB316CA2348EFE500A26654 /* OokbeeTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OokbeeTestTests.swift; sourceTree = "<group>"; };
+		8DB316CC2348EFE500A26654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DB316D12348EFE500A26654 /* OokbeeTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OokbeeTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DB316D52348EFE500A26654 /* OokbeeTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OokbeeTestUITests.swift; sourceTree = "<group>"; };
+		8DB316D72348EFE500A26654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DB316E42348F07800A26654 /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
+		8DB316EE2348F3D500A26654 /* ServiceAPIMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceAPIMethod.swift; sourceTree = "<group>"; };
+		8DB316F52348F82400A26654 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DB316AD2348EFE200A26654 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DB316C32348EFE500A26654 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DB316CE2348EFE500A26654 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8DB316A72348EFE200A26654 = {
+			isa = PBXGroup;
+			children = (
+				8DB316B22348EFE200A26654 /* OokbeeTest */,
+				8DB316C92348EFE500A26654 /* OokbeeTestTests */,
+				8DB316D42348EFE500A26654 /* OokbeeTestUITests */,
+				8DB316B12348EFE200A26654 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8DB316B12348EFE200A26654 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DB316B02348EFE200A26654 /* OokbeeTest.app */,
+				8DB316C62348EFE500A26654 /* OokbeeTestTests.xctest */,
+				8DB316D12348EFE500A26654 /* OokbeeTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8DB316B22348EFE200A26654 /* OokbeeTest */ = {
+			isa = PBXGroup;
+			children = (
+				8DB316E32348F00500A26654 /* Ookbee */,
+				8DB316B32348EFE200A26654 /* AppDelegate.swift */,
+				8DB316B52348EFE200A26654 /* SceneDelegate.swift */,
+				8DB316B72348EFE200A26654 /* ContentView.swift */,
+				8DB316B92348EFE500A26654 /* Assets.xcassets */,
+				8DB316BE2348EFE500A26654 /* LaunchScreen.storyboard */,
+				8DB316C12348EFE500A26654 /* Info.plist */,
+				8DB316BB2348EFE500A26654 /* Preview Content */,
+			);
+			path = OokbeeTest;
+			sourceTree = "<group>";
+		};
+		8DB316BB2348EFE500A26654 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8DB316BC2348EFE500A26654 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8DB316C92348EFE500A26654 /* OokbeeTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				8DB316CA2348EFE500A26654 /* OokbeeTestTests.swift */,
+				8DB316CC2348EFE500A26654 /* Info.plist */,
+			);
+			path = OokbeeTestTests;
+			sourceTree = "<group>";
+		};
+		8DB316D42348EFE500A26654 /* OokbeeTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8DB316D52348EFE500A26654 /* OokbeeTestUITests.swift */,
+				8DB316D72348EFE500A26654 /* Info.plist */,
+			);
+			path = OokbeeTestUITests;
+			sourceTree = "<group>";
+		};
+		8DB316E32348F00500A26654 /* Ookbee */ = {
+			isa = PBXGroup;
+			children = (
+				8DB316F72348FA2A00A26654 /* Models */,
+				8DB316E62348F36B00A26654 /* Services */,
+				8DB316F52348F82400A26654 /* TestViewController.swift */,
+			);
+			path = Ookbee;
+			sourceTree = "<group>";
+		};
+		8DB316E62348F36B00A26654 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8DB316EE2348F3D500A26654 /* ServiceAPIMethod.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8DB316F72348FA2A00A26654 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8DB316E42348F07800A26654 /* BookModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DB316AF2348EFE200A26654 /* OokbeeTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DB316DA2348EFE500A26654 /* Build configuration list for PBXNativeTarget "OokbeeTest" */;
+			buildPhases = (
+				8DB316AC2348EFE200A26654 /* Sources */,
+				8DB316AD2348EFE200A26654 /* Frameworks */,
+				8DB316AE2348EFE200A26654 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OokbeeTest;
+			productName = OokbeeTest;
+			productReference = 8DB316B02348EFE200A26654 /* OokbeeTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8DB316C52348EFE500A26654 /* OokbeeTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DB316DD2348EFE500A26654 /* Build configuration list for PBXNativeTarget "OokbeeTestTests" */;
+			buildPhases = (
+				8DB316C22348EFE500A26654 /* Sources */,
+				8DB316C32348EFE500A26654 /* Frameworks */,
+				8DB316C42348EFE500A26654 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8DB316C82348EFE500A26654 /* PBXTargetDependency */,
+			);
+			name = OokbeeTestTests;
+			productName = OokbeeTestTests;
+			productReference = 8DB316C62348EFE500A26654 /* OokbeeTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8DB316D02348EFE500A26654 /* OokbeeTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DB316E02348EFE500A26654 /* Build configuration list for PBXNativeTarget "OokbeeTestUITests" */;
+			buildPhases = (
+				8DB316CD2348EFE500A26654 /* Sources */,
+				8DB316CE2348EFE500A26654 /* Frameworks */,
+				8DB316CF2348EFE500A26654 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8DB316D32348EFE500A26654 /* PBXTargetDependency */,
+			);
+			name = OokbeeTestUITests;
+			productName = OokbeeTestUITests;
+			productReference = 8DB316D12348EFE500A26654 /* OokbeeTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8DB316A82348EFE200A26654 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = OokbeeTest;
+				TargetAttributes = {
+					8DB316AF2348EFE200A26654 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					8DB316C52348EFE500A26654 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 8DB316AF2348EFE200A26654;
+					};
+					8DB316D02348EFE500A26654 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 8DB316AF2348EFE200A26654;
+					};
+				};
+			};
+			buildConfigurationList = 8DB316AB2348EFE200A26654 /* Build configuration list for PBXProject "OokbeeTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8DB316A72348EFE200A26654;
+			productRefGroup = 8DB316B12348EFE200A26654 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DB316AF2348EFE200A26654 /* OokbeeTest */,
+				8DB316C52348EFE500A26654 /* OokbeeTestTests */,
+				8DB316D02348EFE500A26654 /* OokbeeTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8DB316AE2348EFE200A26654 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DB316C02348EFE500A26654 /* LaunchScreen.storyboard in Resources */,
+				8DB316BD2348EFE500A26654 /* Preview Assets.xcassets in Resources */,
+				8DB316BA2348EFE500A26654 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DB316C42348EFE500A26654 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DB316CF2348EFE500A26654 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DB316AC2348EFE200A26654 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DB316F62348F82400A26654 /* TestViewController.swift in Sources */,
+				8DB316B42348EFE200A26654 /* AppDelegate.swift in Sources */,
+				8DB316B62348EFE200A26654 /* SceneDelegate.swift in Sources */,
+				8DB316F22348F3D500A26654 /* ServiceAPIMethod.swift in Sources */,
+				8DB316E52348F07800A26654 /* BookModel.swift in Sources */,
+				8DB316B82348EFE200A26654 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DB316C22348EFE500A26654 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DB316CB2348EFE500A26654 /* OokbeeTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DB316CD2348EFE500A26654 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DB316D62348EFE500A26654 /* OokbeeTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8DB316C82348EFE500A26654 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DB316AF2348EFE200A26654 /* OokbeeTest */;
+			targetProxy = 8DB316C72348EFE500A26654 /* PBXContainerItemProxy */;
+		};
+		8DB316D32348EFE500A26654 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DB316AF2348EFE200A26654 /* OokbeeTest */;
+			targetProxy = 8DB316D22348EFE500A26654 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8DB316BE2348EFE500A26654 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8DB316BF2348EFE500A26654 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8DB316D82348EFE500A26654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8DB316D92348EFE500A26654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8DB316DB2348EFE500A26654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"OokbeeTest/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = OokbeeTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OokbeeTest.OokbeeTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8DB316DC2348EFE500A26654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"OokbeeTest/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = OokbeeTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OokbeeTest.OokbeeTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8DB316DE2348EFE500A26654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OokbeeTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OokbeeTest.OokbeeTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OokbeeTest.app/OokbeeTest";
+			};
+			name = Debug;
+		};
+		8DB316DF2348EFE500A26654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OokbeeTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OokbeeTest.OokbeeTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OokbeeTest.app/OokbeeTest";
+			};
+			name = Release;
+		};
+		8DB316E12348EFE500A26654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OokbeeTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OokbeeTest.OokbeeTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OokbeeTest;
+			};
+			name = Debug;
+		};
+		8DB316E22348EFE500A26654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OokbeeTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OokbeeTest.OokbeeTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OokbeeTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8DB316AB2348EFE200A26654 /* Build configuration list for PBXProject "OokbeeTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DB316D82348EFE500A26654 /* Debug */,
+				8DB316D92348EFE500A26654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8DB316DA2348EFE500A26654 /* Build configuration list for PBXNativeTarget "OokbeeTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DB316DB2348EFE500A26654 /* Debug */,
+				8DB316DC2348EFE500A26654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8DB316DD2348EFE500A26654 /* Build configuration list for PBXNativeTarget "OokbeeTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DB316DE2348EFE500A26654 /* Debug */,
+				8DB316DF2348EFE500A26654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8DB316E02348EFE500A26654 /* Build configuration list for PBXNativeTarget "OokbeeTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DB316E12348EFE500A26654 /* Debug */,
+				8DB316E22348EFE500A26654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8DB316A82348EFE200A26654 /* Project object */;
+}
