@@ -3,7 +3,6 @@
 //  U-Quest
 //
 //  Created by Teerapat Champati on 4/9/2562 BE.
-//  Copyright © 2562 SUT Global. All rights reserved.
 //
 
 import Foundation
@@ -18,7 +17,7 @@ enum APIMethod: String {
 }
 
 let SERVICE_URL = "http://api.ookbee.com"
-let ENDPOINT_BOOKS = "/user/{userId}/books"
+let ENDPOINT_ADD_NEW_BOOK = "/user/{userId}/books"
 
 class ServiceAPI {
     
@@ -50,10 +49,10 @@ class ServiceAPIParam {
 
 class ServiceAPIMethod {
     
-    static func OokbeeApiBooks(authorization:String, userId: String,book: BookModel,completionHandler: @escaping (Any?, Error?) -> Void){
+    static func OokbeeApiAddNewBook(authorization:String, userId: String,book: BookModel,completionHandler: @escaping (Any?, Error?) -> Void){
         //param
         let session = URLSession(configuration: ServiceAPI.SessionConfig(authorization:authorization))
-        let api = ENDPOINT_BOOKS.replacingOccurrences(of: "{userId}", with: userId)
+        let api = ENDPOINT_ADD_NEW_BOOK.replacingOccurrences(of: "{userId}", with: userId)
         let param: [String: Any]  = ServiceAPIParam.BookParam(book: book)
         let task = session.dataTask(with: ServiceAPI.Request(api: api, method: .POST, params: param),completionHandler: { data, response, error -> Void in
             do {

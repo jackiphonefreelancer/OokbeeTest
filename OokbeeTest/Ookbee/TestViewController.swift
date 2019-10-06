@@ -23,7 +23,7 @@ class TestViewController: UIViewController {
             }
             
             // Start call api
-            self.callApiLoadBooks()
+            self.callApiAddNewBook()
             
             DispatchQueue.main.async {
                 // Do update UI here
@@ -31,7 +31,7 @@ class TestViewController: UIViewController {
         }
     }
     
-    func callApiLoadBooks() {
+    func callApiAddNewBook() {
         let authorization = "YOUR TOKEN OR ANY AUTHEN KEY"
         let userIdAsIntegeter = 0 // YOUR USER ID AS INTEGER
         let userId = String(userIdAsIntegeter) // Convert Int -> String
@@ -40,7 +40,7 @@ class TestViewController: UIViewController {
                     bookName: "", // YOUR BOOK NAME
                     bookAuthor: "", // YOUR BOOK AUTHOR
                     bookPrice: 0.0) // YOUR BOOK PRICE
-        ServiceAPIMethod.OokbeeApiBooks(authorization: authorization, userId: userId,book: book, completionHandler: { result,error -> Void in
+        ServiceAPIMethod.OokbeeApiAddNewBook(authorization: authorization, userId: userId,book: book, completionHandler: { result,error -> Void in
             if (result != nil) {
                 let results = result as! [BookModel]
                 print("\(results)")
