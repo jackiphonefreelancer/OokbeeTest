@@ -8,6 +8,7 @@
 
 import Foundation
 
+
 //HTTP Method
 enum APIMethod: String {
     case GET="GET"
@@ -37,14 +38,24 @@ class ServiceAPI {
         return sessionConfig
     }
 }
+
+class ServiceAPIParam {
+    static func BookParam(book: BookModel) -> [String: Any]{
+        let jsonEncoder = JSONEncoder()
+        let jsonData = try! jsonEncoder.encode(book)
+        let json: [String:Any] = try! JSONSerialization.jsonObject(with: jsonData, options: []) as! [String : Any]
+        return json
+    }
+}
+
 class ServiceAPIMethod {
     
-    static func OokbeeApiBooks(authorization:String, userId: String,completionHandler: @escaping (Any?, Error?) -> Void){
+    static func OokbeeApiBooks(authorization:String, userId: String,book: BookModel,completionHandler: @escaping (Any?, Error?) -> Void){
         //param
         let session = URLSession(configuration: ServiceAPI.SessionConfig(authorization:authorization))
         let api = ENDPOINT_BOOKS.replacingOccurrences(of: "{userId}", with: userId)
-        
-        let task = session.dataTask(with: ServiceAPI.Request(api: api, method: .POST, params: nil),completionHandler: { data, response, error -> Void in
+        let param: [String: Any]  = ServiceAPIParam.BookParam(book: book)
+        let task = session.dataTask(with: ServiceAPI.Request(api: api, method: .POST, params: param),completionHandler: { data, response, error -> Void in
             do {
                 if let httpResponse = response as? HTTPURLResponse {
                     if(httpResponse.statusCode == 200){
@@ -56,7 +67,7 @@ class ServiceAPIMethod {
                 }
             }
         })
-        
+
         task.resume()
     }
 }

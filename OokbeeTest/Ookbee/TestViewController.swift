@@ -34,7 +34,12 @@ class TestViewController: UIViewController {
     func callApiLoadBooks() {
         let authorization = "YOUR TOKEN OR ANY AUTHEN KEY"
         let userId = "YOUR USER ID"
-        ServiceAPIMethod.OokbeeApiBooks(authorization: authorization, userId: userId, completionHandler: { result,error -> Void in
+        let book: BookModel = BookModel(
+                    bookId: 0, // YOUR BOOK ID
+                    bookName: "", // YOUR BOOK NAME
+                    bookAuthor: "", // YOUR BOOK AUTHOR
+                    bookPrice: 0.0) // YOUR BOOK PRICE
+        ServiceAPIMethod.OokbeeApiBooks(authorization: authorization, userId: userId,book: book, completionHandler: { result,error -> Void in
             if (result != nil) {
                 let results = result as! [BookModel]
                 print("\(results)")

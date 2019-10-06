@@ -51,4 +51,11 @@ struct BookModel: Codable {
         try values.encode (bookAuthor, forKey: .bookAuthor)
         try values.encode (bookPrice, forKey: .bookPrice)
     }
+    
+    init(bookId: Int,bookName: String,bookAuthor: String,bookPrice: Double) {
+        self.bookId = bookId
+        self.bookName = bookName
+        self.bookAuthor = bookAuthor
+        self.bookPrice = bookPrice
+    }
 }
