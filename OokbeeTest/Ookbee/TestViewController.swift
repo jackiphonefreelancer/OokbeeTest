@@ -33,7 +33,8 @@ class TestViewController: UIViewController {
     
     func callApiLoadBooks() {
         let authorization = "YOUR TOKEN OR ANY AUTHEN KEY"
-        let userId = "YOUR USER ID"
+        let userIdAsIntegeter = 0 // YOUR USER ID AS INTEGER
+        let userId = String(userIdAsIntegeter) // Convert Int -> String
         let book: BookModel = BookModel(
                     bookId: 0, // YOUR BOOK ID
                     bookName: "", // YOUR BOOK NAME
